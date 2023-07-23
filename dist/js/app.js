@@ -440,7 +440,7 @@
                     bodyLockToggle();
                     document.documentElement.classList.toggle("menu-open");
                 }
-                if (bodyLockStatus && !e.target.closest(".menu__body")) menuClose();
+                if (bodyLockStatus && !e.target.closest(".menu__list")) menuClose();
             }));
         }
         function menuClose() {
@@ -3957,7 +3957,7 @@
                     allowTouchMove: false,
                     effect: "fade",
                     navigation: {
-                        nextEl: ".subslider-hero-mainpage__nav-text"
+                        nextEl: ".hero-mainpage__nav-text"
                     },
                     breakpoints: {
                         320: {
@@ -3981,14 +3981,14 @@
                     spaceBetween: 0,
                     speed: 1e3,
                     loop: true,
-                    allowTouchMove: true,
+                    simulateTouch: true,
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
                         type: "bullets"
                     },
                     navigation: {
-                        nextEl: ".subslider-hero-mainpage__arrow"
+                        nextEl: ".hero-mainpage__arrow"
                     },
                     breakpoints: {
                         320: {
@@ -4000,7 +4000,7 @@
                     },
                     on: {
                         slideChange: function() {
-                            const navText = document.querySelector(".subslider-hero-mainpage__nav-text");
+                            const navText = document.querySelector(".hero-mainpage__nav-text");
                             let nextSlide = this.slides[this.activeIndex + 1];
                             if (this.isEnd) nextSlide = this.slides[0];
                             const slideTitle = nextSlide.querySelector(".slide-hero-mainpage__title").textContent;
