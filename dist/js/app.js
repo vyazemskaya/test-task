@@ -3992,11 +3992,13 @@
                     breakpoints: {
                         320: {
                             autoHeight: true,
-                            simulateTouch: false
+                            simulateTouch: false,
+                            allowTouchMove: false
                         },
                         991.98: {
                             autoHeight: false,
-                            simulateTouch: true
+                            simulateTouch: true,
+                            allowTouchMove: true
                         }
                     },
                     on: {
