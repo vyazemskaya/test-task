@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230719235253">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230723195315">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +14,680 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="100" data-scroll-show class="header">
 			<div class="header__container">
+				<div class="header__row">
+					<a href="#" class="header__logo"><img data-src="img/logo.svg" alt="" aria-hidden="true" class="header__logo-img" /></a>
+					<div data-da=".header__actions,800,last" class="header__menu menu">
+						<button type="button" class="menu__hamburger hamburger">
+							<span class="hamburger__inner">
+								<span class="hamburger__inner-el">
+									<span></span><span></span><span></span><span></span>
+								</span>
+							</span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link"><span class="menu__link-txt">главная</span></a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link"><span class="menu__link-txt">каталог</span></a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link"><span class="menu__link-txt">новости</span></a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link"><span class="menu__link-txt">наш асц</span></a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link"><span class="menu__link-txt">контакты</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<button type="button" class="header__search-btn _icon-search"></button>
+					<div class="header__actions actions-header">
+						<div class="actions-header__item-wrap actions-header__item-wrap_profile">
+							<a href="#" class="actions-header__item _icon-profile"></a>
+							<div class="actions-header__dropdown dropdown-actions-header">
+								<a href="#" class="dropdown-actions-header__head">
+									<span class="dropdown-actions-header__icon _icon-profile"></span>
+									<span class="dropdown-actions-header__username">Мария</span>
+								</a>
+								<ul class="dropdown-actions-header__list">
+									<li class="dropdown-actions-header__item">
+										<a href="#" class="dropdown-actions-header__link"><span class="dropdown-actions-header__link-txt">Личный кабинет</span></a>
+									</li>
+									<li class="dropdown-actions-header__item">
+										<a href="#" class="dropdown-actions-header__link"><span class="dropdown-actions-header__link-txt">История заказов</span></a>
+									</li>
+									<li class="dropdown-actions-header__item">
+										<a href="#" class="dropdown-actions-header__link"><span class="dropdown-actions-header__link-txt">Персональные предложения</span></a>
+									</li>
+									<li class="dropdown-actions-header__item">
+										<a href="#" class="dropdown-actions-header__link"><span class="dropdown-actions-header__link-txt">Выйти</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="actions-header__item-wrap _mobile-hide">
+							<a href="#" class="actions-header__item _icon-signal"></a>
+						</div>
+						<div class="actions-header__item-wrap _mobile-hide">
+							<a href="#" class="actions-header__item _icon-heart"></a>
+						</div>
+						<div class="actions-header__item-wrap">
+							<a href="#" class="actions-header__item _icon-shopping-bag"><span class="actions-header__count">3</span></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
-		<main class="main"></main>
+
+		<main class="main mainpage">
+			<section class="mainpage__hero hero-mainpage">
+				<div class="hero-mainpage__container">
+					<div class="hero-mainpage__scroll scroll-hero-mainpage">
+						<span class="scroll-hero-mainpage__text">Scroll to catalog</span>
+						<span class="scroll-hero-mainpage__mouse"></span>
+					</div>
+					<div class="hero-mainpage__carousel">
+						<div class="hero-mainpage__slider-wrap">
+							<div class="hero-mainpage__slider swiper">
+								<div class="hero-mainpage__wrapper swiper-wrapper">
+									<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+										<div class="slide-hero-mainpage__text">
+											<span class="slide-hero-mainpage__subtitle">Новое поступление</span>
+											<span class="slide-hero-mainpage__title title">Лучшие товары от компании Dell</span>
+											<a href="#" class="slide-hero-mainpage__btn btn">
+												<span class="btn__ellipse ellipse _icon-arrow"></span>
+												<span class="btn__txt">Побробнее</span>
+											</a>
+										</div>
+										<div class="slide-hero-mainpage__image-wrap">
+											<picture><source srcset="img/hero-mainpage/01.webp" type="image/webp"><img src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="slide-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+										<div class="slide-hero-mainpage__text">
+											<span class="slide-hero-mainpage__subtitle">Новое поступление</span>
+											<span class="slide-hero-mainpage__title title">Выгодное предложение от Dell</span>
+											<a href="#" class="slide-hero-mainpage__btn btn">
+												<span class="btn__ellipse ellipse _icon-arrow"></span>
+												<span class="link__btn">Побробнее</span>
+											</a>
+										</div>
+										<div class="slide-hero-mainpage__image-wrap">
+											<picture><source srcset="img/hero-mainpage/02.webp" type="image/webp"><img src="img/hero-mainpage/02.png" alt="ноутбук / Dell Latitude 9420 Ces" class="slide-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+										<div class="slide-hero-mainpage__text">
+											<span class="slide-hero-mainpage__subtitle">Новое поступление</span>
+											<span class="slide-hero-mainpage__title title">Лучшие товары от компании Dell</span>
+											<a href="#" class="slide-hero-mainpage__btn btn">
+												<span class="btn__ellipse ellipse _icon-arrow"></span>
+												<span class="link__btn">Побробнее</span>
+											</a>
+										</div>
+										<div class="slide-hero-mainpage__image-wrap">
+											<picture><source srcset="img/hero-mainpage/01.webp" type="image/webp"><img src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="slide-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+										<div class="slide-hero-mainpage__text">
+											<span class="slide-hero-mainpage__subtitle">Новое поступление</span>
+											<span class="slide-hero-mainpage__title title">Выгодное предложение от Dell</span>
+											<a href="#" class="slide-hero-mainpage__btn btn">
+												<span class="btn__ellipse ellipse _icon-arrow"></span>
+												<span class="link__btn">Побробнее</span>
+											</a>
+										</div>
+										<div class="slide-hero-mainpage__image-wrap">
+											<picture><source srcset="img/hero-mainpage/02.webp" type="image/webp"><img src="img/hero-mainpage/02.png" alt="ноутбук / Dell Latitude 9420 Ces" class="slide-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="hero-mainpage__slide slide-hero-mainpage swiper-slide">
+										<div class="slide-hero-mainpage__text">
+											<span class="slide-hero-mainpage__subtitle">Новое поступление</span>
+											<span class="slide-hero-mainpage__title title">Лучшие товары от компании Dell</span>
+											<a href="#" class="slide-hero-mainpage__btn btn">
+												<span class="btn__ellipse ellipse _icon-arrow"></span>
+												<span class="link__btn">Побробнее</span>
+											</a>
+										</div>
+										<div class="slide-hero-mainpage__image-wrap">
+											<picture><source srcset="img/hero-mainpage/01.webp" type="image/webp"><img src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="slide-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hero-mainpage__control">
+								<div class="hero-mainpage__pagination swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="hero-mainpage__subslider-wrap">
+							<div class="hero-mainpage__subslider subslider-hero-mainpage swiper">
+								<div class="subslider-hero-mainpage__wrapper swiper-wrapper">
+									<div class="subslider-hero-mainpage__slide swiper-slide">
+										<div class="subslider-hero-mainpage__image-wrap">
+											<picture><source data-srcset="img/hero-mainpage/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="subslider-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="subslider-hero-mainpage__slide swiper-slide">
+										<div class="subslider-hero-mainpage__image-wrap">
+											<picture><source data-srcset="img/hero-mainpage/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-mainpage/02.png" alt="ноутбук / Dell Latitude 9420 Ces" class="subslider-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="subslider-hero-mainpage__slide swiper-slide">
+										<div class="subslider-hero-mainpage__image-wrap">
+											<picture><source data-srcset="img/hero-mainpage/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="subslider-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="subslider-hero-mainpage__slide swiper-slide">
+										<div class="subslider-hero-mainpage__image-wrap">
+											<picture><source data-srcset="img/hero-mainpage/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-mainpage/02.png" alt="ноутбук / Dell Latitude 9420 Ces" class="subslider-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+									<div class="subslider-hero-mainpage__slide swiper-slide">
+										<div class="subslider-hero-mainpage__image-wrap">
+											<picture><source data-srcset="img/hero-mainpage/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-mainpage/01.png" alt="ноутбук / Dell Inspiron 14 7000 Series" class="subslider-hero-mainpage__image" /></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="subslider-hero-mainpage__nav">
+								<p class="subslider-hero-mainpage__nav-text">
+									Выгодное предложение от Dell
+								</p>
+								<button data-da=".hero-mainpage__control,991.98,last" type="button" class="subslider-hero-mainpage__arrow _icon-sl-arrow"></button>
+							</div>
+						</div>
+					</div>
+					<div class="hero-mainpage__bg">
+						<img data-src="img/hero-mainpage/dell.svg" alt="" aria-hidden="true" class="hero-mainpage__bg-img" />
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__catalog catalog-mainpage">
+				<div class="catalog-mainpage__container">
+					<div class="catalog-mainpage__grid">
+						<div data-da=".catalog-mainpage__container,991.98,first" class="catalog-mainpage__info">
+							<span class="catalog-mainpage__title title">Каталог товаров от Dell</span>
+							<p class="catalog-mainpage__text txt">
+								Наша компания является зарегистрированным и официальным
+								партнером Dell в России.
+							</p>
+							<a href="#" class="catalog-mainpage__btn btn">
+								<span class="btn__ellipse ellipse _icon-arrow"></span>
+								<span class="btn__text">В каталог</span>
+							</a>
+						</div>
+						<a href="#" class="catalog-mainpage__item catalog-mainpage__item_laptops item-catalog-mainpage">
+							<div class="item-catalog-mainpage__image-wrap">
+								<picture><source data-srcset="img/catalog-mainpage/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-mainpage/01.png" alt="ноутбуки" class="item-catalog-mainpage__image" /></picture>
+							</div>
+
+							<div class="item-catalog-mainpage__info">
+								<span class="item-catalog-mainpage__quantity">105 товаров</span>
+								<span class="item-catalog-mainpage__heading">Ноутбуки</span>
+							</div>
+							<span class="item-catalog-mainpage__number">01</span>
+						</a>
+						<a href="#" class="catalog-mainpage__item catalog-mainpage__item_computers item-catalog-mainpage">
+							<div class="item-catalog-mainpage__image-wrap">
+								<picture><source data-srcset="img/catalog-mainpage/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-mainpage/02.png" alt="Персональные компьютеры" class="item-catalog-mainpage__image" /></picture>
+							</div>
+
+							<div class="item-catalog-mainpage__info">
+								<span class="item-catalog-mainpage__quantity">65 товаров</span>
+								<span class="item-catalog-mainpage__heading">Персональные компьютеры</span>
+							</div>
+							<span class="item-catalog-mainpage__number">02</span>
+						</a>
+						<a href="#" class="catalog-mainpage__item catalog-mainpage__item_servers item-catalog-mainpage">
+							<div class="item-catalog-mainpage__image-wrap">
+								<picture><source data-srcset="img/catalog-mainpage/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-mainpage/03.png" alt="Cерверы" class="item-catalog-mainpage__image" /></picture>
+							</div>
+
+							<div class="item-catalog-mainpage__info">
+								<span class="item-catalog-mainpage__quantity">13 товаров</span>
+								<span class="item-catalog-mainpage__heading">Cерверы</span>
+							</div>
+							<span class="item-catalog-mainpage__number">03</span>
+						</a>
+						<a href="#" class="catalog-mainpage__item catalog-mainpage__item_emc item-catalog-mainpage">
+							<div class="item-catalog-mainpage__image-wrap">
+								<picture><source data-srcset="img/catalog-mainpage/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-mainpage/04.png" alt="Dell EMC" class="item-catalog-mainpage__image" /></picture>
+							</div>
+
+							<div class="item-catalog-mainpage__info">
+								<span class="item-catalog-mainpage__quantity">2345 товаров</span>
+								<span class="item-catalog-mainpage__heading">Dell EMC</span>
+							</div>
+							<span class="item-catalog-mainpage__number">04</span>
+						</a>
+						<a href="#" class="catalog-mainpage__item catalog-mainpage__item_spares item-catalog-mainpage">
+							<div class="item-catalog-mainpage__image-wrap">
+								<picture><source data-srcset="img/catalog-mainpage/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/catalog-mainpage/05.png" alt="Запасные части к Dell EMC" class="item-catalog-mainpage__image" /></picture>
+							</div>
+
+							<div class="item-catalog-mainpage__info">
+								<span class="item-catalog-mainpage__quantity">195 товаров</span>
+								<span class="item-catalog-mainpage__heading">Запасные части к Dell EMC</span>
+							</div>
+							<span class="item-catalog-mainpage__number">05</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__advantages advantages-mainpage">
+				<div data-da=".advantages-mainpage__content,767.98,last" class="advantages-mainpage__bg">
+					<img data-src="img/advantages-mainpage/bg-text.svg" alt="" aria-hidden="true" class="advantages-mainpage__bg-img" />
+				</div>
+				<div class="advantages-mainpage__container">
+					<div class="advantages-mainpage__content">
+						<div class="advantages-mainpage__image-wrap">
+							<picture><source data-srcset="img/advantages-mainpage/laptop.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/advantages-mainpage/laptop.png" alt="ноутбук / Dell Inspiron 5770" class="advantages-mainpage__image" /></picture>
+						</div>
+						<div class="advantages-mainpage__info">
+							<span class="advantages-mainpage__title title">Наши преимущества</span>
+							<p class="advantages-mainpage__text txt">
+								Оптимизация мощностей (расходов, социальных выплат и т.п.)
+								позволили компании на 4,7% понизить цены по сравнению
+								с конкурентами
+							</p>
+							<a href="#" class="advantages-mainpage__btn btn">
+								<span class="btn__ellipse ellipse _icon-arrow"></span>
+								<span class="btn__text">Оставить заявку</span>
+							</a>
+						</div>
+					</div>
+					<div class="advantages-mainpage__row">
+						<div class="advantages-mainpage__item item-advantages-mainpage">
+							<div class="item-advantages-mainpage__icon-wrap">
+								<img data-src="img/advantages-mainpage/icons/card.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__icon" />
+							</div>
+							<div class="item-advantages-mainpage__info">
+								<span class="item-advantages-mainpage__heading">Самые выгодные и низкие цены</span>
+								<p class="item-advantages-mainpage__text txt">
+									В наличии широкий ассортимент, а также доступные цены на
+									ноутбуки Dell
+								</p>
+							</div>
+							<div class="item-advantages-mainpage__svg-vector">
+								<img data-src="img/advantages-mainpage/vector.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__svg-vector-img" />
+							</div>
+						</div>
+						<div class="advantages-mainpage__item item-advantages-mainpage">
+							<div class="item-advantages-mainpage__icon-wrap">
+								<img data-src="img/advantages-mainpage/icons/verify.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__icon" />
+							</div>
+							<div class="item-advantages-mainpage__info">
+								<span class="item-advantages-mainpage__heading">Авторизованный сервисный центр DELL</span>
+								<p class="item-advantages-mainpage__text txt">
+									Сертифицированный сервисный центр по ремонту техники Dell
+									в России и странах СНГ
+								</p>
+							</div>
+							<div class="item-advantages-mainpage__svg-vector">
+								<img data-src="img/advantages-mainpage/vector.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__svg-vector-img" />
+							</div>
+						</div>
+						<div class="advantages-mainpage__item item-advantages-mainpage">
+							<div class="item-advantages-mainpage__icon-wrap">
+								<img data-src="img/advantages-mainpage/icons/people.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__icon" />
+							</div>
+							<div class="item-advantages-mainpage__info">
+								<span class="item-advantages-mainpage__heading">Высокий уровень технической экспертизы</span>
+								<p class="item-advantages-mainpage__text txt">
+									Мы прошли аттестацию в виде тестирования, где показали
+									высокий уровень знаний
+								</p>
+							</div>
+							<div class="item-advantages-mainpage__svg-vector">
+								<img data-src="img/advantages-mainpage/vector.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__svg-vector-img" />
+							</div>
+						</div>
+						<div class="advantages-mainpage__item item-advantages-mainpage">
+							<div class="item-advantages-mainpage__icon-wrap">
+								<img data-src="img/advantages-mainpage/icons/cube.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__icon" />
+							</div>
+							<div class="item-advantages-mainpage__info">
+								<span class="item-advantages-mainpage__heading">Официальный партнер DELL</span>
+								<p class="item-advantages-mainpage__text txt">
+									Официальный поставщик продукции DELL в России и странах СНГ
+								</p>
+							</div>
+							<div class="item-advantages-mainpage__svg-vector">
+								<img data-src="img/advantages-mainpage/vector.svg" alt="" aria-hidden="true" class="item-advantages-mainpage__svg-vector-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__news news-mainpage">
+				<div class="news-mainpage__container">
+					<div class="news-mainpage__head">
+						<span class="news-mainpage__title title">Последние новости</span>
+						<a href="#" class="news-mainpage__btn btn">
+							<span class="btn__ellipse ellipse _icon-arrow"></span>
+							<span class="btn__text">Все новости</span>
+						</a>
+						<p class="news-mainpage__text txt">
+							Вы можете посмотреть ещё больше интересных новостей и узнать о
+							последних новинках, перейдя по кнопке
+						</p>
+					</div>
+					<div class="news-mainpage__grid">
+						<a href="#" class="news-mainpage__item item-news-mainpage">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/01.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="news-mainpage__item item-news-mainpage _mobile-hide">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/02.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="news-mainpage__item item-news-mainpage _mobile-hide">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/03.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="news-mainpage__item item-news-mainpage">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/04.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="news-mainpage__item item-news-mainpage">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/05.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+						<a href="#" class="news-mainpage__item item-news-mainpage _mobile-hide">
+							<span class="item-news-mainpage__label">
+								<time datetime="07-11" class="item-news-mainpage__date">
+									<span class="item-news-mainpage__day">11</span>
+									<span class="item-news-mainpage__month">июля</span>
+								</time>
+							</span>
+							<div class="item-news-mainpage__image-ibg">
+								<picture><source data-srcset="img/news-mainpage/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news-mainpage/06.png" aria-hidden="true" alt="" class="item-news-mainpage__image" /></picture>
+							</div>
+							<div class="item-news-mainpage__content">
+								<span class="item-news-mainpage__heading">GE использует технологии Dell
+								</span>
+								<p class="item-news-mainpage__text txt">
+									Вы можете посмотреть ещё больше интересных
+								</p>
+								<span class="item-news-mainpage__ellipse-wrap">
+									<span class="item-news-mainpage__ellipse ellipse ellipse_dark _icon-arrow"></span>
+								</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="mainpage__contacts contacts-mainpage">
+				<div class="contacts-mainpage__container">
+					<div class="contacts-mainpage__column contacts-mainpage__column_contacts">
+						<span class="contacts-mainpage__title title">Наши контакты</span>
+						<p class="contacts-mainpage__text txt">
+							Dы можете связаться с нашим онлайн-консультантом
+						</p>
+						<ul class="contacts-mainpage__list list-contacts-mainpage">
+							<li class="list-contacts-mainpage__item">
+								<span class="list-contacts-mainpage__label list-contacts-mainpage__label_location">Адрес</span>
+								<a href="#" class="list-contacts-mainpage__link">
+									Москва, ул. 3-я Хорошевская, дом 2, строение 1
+								</a>
+							</li>
+							<li class="list-contacts-mainpage__item">
+								<span class="list-contacts-mainpage__label list-contacts-mainpage__label_email">E-mail</span>
+								<a href="mailto:dell_ru@gmail.com" class="list-contacts-mainpage__link">
+									dell_ru@gmail.com
+								</a>
+							</li>
+							<li class="list-contacts-mainpage__item">
+								<span class="list-contacts-mainpage__label list-contacts-mainpage__label_tel">Телефон</span>
+								<a href="tel:74957370601" class="list-contacts-mainpage__link">
+									+7 495 737-06-01
+								</a>
+								<a href="tel:74957370601" class="list-contacts-mainpage__link">
+									+7 495 737-06-01
+								</a>
+							</li>
+						</ul>
+						<ul class="contacts-mainpage__socials socials">
+							<li class="socials__item">
+								<a href="#" target="_blank" class="socials__link _icon-facebook"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" target="_blank" class="socials__link _icon-whatsapp"></a>
+							</li>
+						</ul>
+						<div class="contacts-mainpage__phone-img-wrap">
+							<picture><source data-srcset="img/contacts-mainpage/phone.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/contacts-mainpage/phone.png" aria-hidden="true" alt="" class="contacts-mainpage__phone-img" /></picture>
+						</div>
+					</div>
+					<div class="contacts-mainpage__column contacts-mainpage__column_form">
+						<span class="contacts-mainpage__title title title_white">Оставьте заявку</span>
+						<p class="contacts-mainpage__text txt txt_white">
+							Оставьте свой номер, и мы перезвоним Вам.
+						</p>
+						<form data-dev action="#" class="contacts-mainpage__form form-contacts-mainpage form">
+							<div class="form-contacts-mainpage__fields">
+								<div class="form-contacts-mainpage__input-wrap">
+									<input id="name_field" data-validate data-required autocomplete="off" type="text" name="form[]" data-error placeholder="" class="form-contacts-mainpage__input input" />
+									<label for="name_field" class="form-contacts-mainpage__label">Ваше имя</label>
+								</div>
+								<div class="form-contacts-mainpage__input-wrap">
+									<input id="phone_field" data-validate data-required="tel" autocomplete="off" type="tel" name="form[]" data-error placeholder="" class="form-contacts-mainpage__input input" />
+									<label for="phone_field" class="form-contacts-mainpage__label">Номер телефона</label>
+								</div>
+								<div class="form-contacts-mainpage__input-wrap">
+									<textarea id="comment_field" data-validate data-required name="form[]" class="form-contacts-mainpage__textarea input"></textarea>
+									<label for="comment_field" class="form-contacts-mainpage__label">Комментарий</label>
+								</div>
+							</div>
+							<button type="submit" class="form-contacts-mainpage__btn btn">
+								<span class="btn__ellipse ellipse _icon-arrow"></span>
+								<span class="btn__text btn__text_white">Заказать</span>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="contacts-mainpage__bg">
+					<img data-src="img/contacts-mainpage/bg-text.svg" alt="" aria-hidden="true" class="contacts-mainpage__bg-img" />
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__main">
+					<a href="#" class="footer__logo"><img data-src="img/logo.svg" aria-hidden="true" alt="" class="footer__logo-img" /></a>
+					<nav class="footer__navigation">
+						<ul class="footer__list">
+							<li class="footer__item footer__item_catalog">
+								<span class="footer__title">Каталог</span>
+								<ul class="footer__sublist sublist-footer">
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Ноутбуки</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Персональные компьютеры</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Серверы</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Dell EMC</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Запасные части к Dell EMC</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer__item footer__item_profile">
+								<span class="footer__title">Личный кабинет</span>
+								<ul class="footer__sublist sublist-footer">
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Профиль</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">История заказов</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">SMS-уведомления</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Избранное</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Сравнение товаров</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer__item footer__item_help">
+								<span class="footer__title">Помощь</span>
+								<ul class="footer__sublist sublist-footer">
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Доставка и оплата</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Контакты</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">FAQ</a>
+									</li>
+									<li class="sublist-footer__item">
+										<a href="#" class="sublist-footer__link">Наш АСЦ</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<ul class="footer__contacts contacts-footer">
+						<li class="contacts-footer__item">
+							<span class="contacts-footer__label">Адрес</span><span class="contacts-footer__link-txt">
+								<a href="#" class="contacts-footer__link">Москва, ул. 3-я Хорошевская, дом 2, строение 1</a></span>
+						</li>
+						<li class="contacts-footer__item">
+							<span class="contacts-footer__label">Телефон</span>
+							<span class="contacts-footer__link-txt">
+								<a href="tel:74957370601" class="contacts-footer__link">+7 495 737-06-01,
+								</a>
+								<a href="tel:74957370601" class="contacts-footer__link">+7 495 737-06-01</a>
+							</span>
+						</li>
+						<li class="contacts-footer__item">
+							<span class="contacts-footer__label">E-mail</span>
+							<span class="contacts-footer__link-txt">
+								<a href="mailto:dell_ru@gmail.com" class="contacts-footer__link">dell_ru@gmail.com</a>
+							</span>
+						</li>
+					</ul>
+					<ul class="footer__socials socials">
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__link _icon-facebook"></a>
+						</li>
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__link _icon-whatsapp"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__bg">
+				<img data-src="img/bg-text.svg" alt="" aria-hidden="true" class="footer__bg-img" />
 			</div>
 		</footer>
+
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230719235253"></script>
+	<script src="js/app.min.js?_v=20230723195315"></script>
 </body>
 
 </html>
