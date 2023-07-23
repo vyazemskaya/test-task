@@ -3981,7 +3981,6 @@
                     spaceBetween: 0,
                     speed: 1e3,
                     loop: true,
-                    simulateTouch: true,
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
@@ -3992,10 +3991,12 @@
                     },
                     breakpoints: {
                         320: {
-                            autoHeight: true
+                            autoHeight: true,
+                            simulateTouch: false
                         },
                         991.98: {
-                            autoHeight: false
+                            autoHeight: false,
+                            simulateTouch: true
                         }
                     },
                     on: {

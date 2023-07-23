@@ -2210,6 +2210,7 @@ textarea.input {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   min-height: 9.125rem;
+  overflow: hidden;
   border-radius: 0 0 2.8125rem 0;
 }
 
@@ -2222,7 +2223,7 @@ textarea.input {
 }
 
 .item-news-mainpage__content::before {
-  right: 0;
+  right: -0.0625rem;
   width: 26rem;
   background: url("../img/news-mainpage/rectangle.svg") top right no-repeat;
   background-size: contain;
@@ -2269,7 +2270,7 @@ textarea.input {
   position: absolute;
   z-index: 3;
   top: 15%;
-  right: 2.4375rem;
+  right: 2.375rem;
 }
 
 .item-news-mainpage__ellipse-wrap::after {
@@ -3725,7 +3726,7 @@ textarea.input {
 
   .item-news-mainpage__ellipse-wrap {
     top: 14%;
-    right: 1.875rem;
+    right: 1.8125rem;
   }
 
   .item-news-mainpage__ellipse-wrap::after {
