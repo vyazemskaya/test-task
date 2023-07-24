@@ -1942,6 +1942,7 @@ textarea.input {
           flex-direction: column;
   background-color: #292d32;
   border-radius: 1.125rem;
+  overflow: hidden;
 }
 
 @supports (padding-top: clamp( 0.9375rem , -0.1338687837rem  +  2.2320764263vw , 1.875rem )) {
